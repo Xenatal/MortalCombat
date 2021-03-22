@@ -45,7 +45,7 @@ a {
 }
 
 .app {
-    background: linear-gradient(90deg, #010202 -2.88%, rgba(1, 2, 2, 0.2) 44.9%), url('/img/cover-image.jpg') no-repeat top right;
+    background: linear-gradient(90deg, #010202 0%, #010202 50%, rgba(1, 2, 2, 0.2) 90%)no-repeat;
     min-height: 100vh;
 }
 
@@ -61,12 +61,14 @@ a {
 
 .tags>* {
     margin-right: 15px;
+    margin-bottom: 10px;
 }
 
 .tags {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    flex-wrap: wrap;
     opacity: 0.4;
     color: #E5E5E5;
     font-size: 16px;
@@ -106,4 +108,43 @@ a {
 .button-text {
     margin-left: 10px;
     vertical-align: text-bottom;
+}
+
+@media (max-width: 768px) {
+    .app {
+        height: auto;
+        background-size: 450px;
+        padding-bottom: 350px;
+        background-position: bottom center;
+        background: url('/img/cover-image.jpg') no-repeat bottom center/300px;
+    }
+    video {
+        display: none;
+    }
+    .film {
+        padding-top: 2%;
+    }
+    .description {
+        font-size: 16px;
+        max-width: 330px;
+    }
+    .film-logo {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .button-text {
+        display: none;
+    }
+    .user-name {
+        display: none;
+    }
+    .app {
+        padding-bottom: 350px;
+        background-size: 400px;
+    }
+    .button {
+        margin-bottom: 10px;
+    }
 }
