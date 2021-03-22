@@ -12,6 +12,7 @@ body {
     justify-content: space-between;
     align-items: center;
     max-width: 1146px;
+    width: 90%;
     margin: auto;
     padding: 56px 0;
 }
@@ -46,4 +47,63 @@ a {
 .app {
     background: linear-gradient(90deg, #010202 -2.88%, rgba(1, 2, 2, 0.2) 44.9%), url('/img/cover-image.jpg') no-repeat top right;
     min-height: 100vh;
+}
+
+.film {
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1146px;
+    width: 90%;
+    margin: auto;
+    padding: 7% 0;
+    color: white;
+}
+
+.tags>* {
+    margin-right: 15px;
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    opacity: 0.4;
+    color: #E5E5E5;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.age {
+    border: 1px solid #FFF;
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding: 1px 5px;
+}
+
+.description {
+    max-width: 460px;
+    font-size: 21px;
+    line-height: 140%;
+    margin-bottom: 36px;
+}
+
+.button {
+    padding: 11px 26px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+    line-height: 140%;
+    background: #2F2F2F;
+    color: white;
+    cursor: pointer;
+}
+
+.button-primary {
+    background: #ea6e20;
+    margin-right: 15px;
+}
+
+.button-text {
+    margin-left: 10px;
+    vertical-align: text-bottom;
 }
