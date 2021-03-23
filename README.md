@@ -8,7 +8,5 @@
 - Fancybox
 - Vide.js
 
-
-
 ## Struktur:
 ![Mindmap der Struktur](/MortalCombat.png)
